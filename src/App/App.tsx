@@ -74,7 +74,7 @@ export const App = React.memo(function App() {
       { gasLimit: 10000000 },
     );
     setTxHash((claimResult as Record<string, string>).hash);
-    console.log("Airdrop claimed successfully!", claimResult);
+    console.log("NFT claimed successfully!", claimResult);
   };
 
   const claim = async () => {
@@ -111,7 +111,7 @@ export const App = React.memo(function App() {
             className="text-20 font-bold text-ffffff xs:text-32"
             style={{ flexGrow: 1 }}
           >
-            Mesha
+            ONCE
           </p>
           {walletAddress && (
             <div className="font-bold text-ffffff">
@@ -132,17 +132,17 @@ export const App = React.memo(function App() {
         {screen !== Screen.Congratulations && (
           <div className="grid justify-items-center gap-y-3 justify-self-center text-ffffff xs:gap-y-4">
             <h1 className="text-16 font-bold xs:text-24">
-              BIGGEST AIRDROP IS HERE!
+              ONCE INSURANCE KYC VALIDATION
             </h1>
 
             <div className="mt-2 grid justify-items-center text-48 lg:text-80 xs:mt-0 xs:block">
-              <span className="font-black text-df57bc ">Get $50 </span>
-              <span className="font-black">in Mesha</span>
+              <span className="font-black text-7ed957 ">LIFE NFT </span>
+              <span className="font-black"></span>
             </div>
 
             <p className="mb-5 text-center text-14 xs:mb-8 xs:text-18">
-              Mesha is live and ready to use. Login to claim your tokens for
-              free.
+              The extra-life token is a real person life representation in the
+              digital world in a NFT format.
             </p>
 
             {screen === Screen.Initial && (
@@ -150,13 +150,14 @@ export const App = React.memo(function App() {
                 <Button
                   onClick={connectWallet}
                   type="button"
-                  className="bg-df57bc hover:bg-df57bc/70"
+                  className="bg-7ed957 hover:bg-26095e/70"
                 >
-                  Connect Wallet to Claim
+                  Connect Wallet to Validate Identity
                 </Button>
 
                 <p className="text-14 xs:text-12">
-                  To test this flow, connect a wallet on Testnet
+                  To test this flow, connect a wallet on Testnet and use
+                  https://mock-app.id.worldcoin.org/
                 </p>
               </div>
             )}
@@ -172,7 +173,7 @@ export const App = React.memo(function App() {
 
                 <Button
                   type="button"
-                  className="w-full bg-df57bc hover:bg-df57bc/70"
+                  className="w-full bg-7ed957 hover:bg-7ed957/70"
                   disabled={!worldIDProof}
                   onClick={claim}
                 >
@@ -191,10 +192,10 @@ export const App = React.memo(function App() {
               useMask={false}
             />
             <h1 className="text-24 font-bold text-ffffff xs:text-30">
-              CONGRATULATIONS!
+              CONGRATULATIONS ID Done!
             </h1>
             <p className="text-center text-14 text-ffffff xs:text-18">
-              Your tokens have been claimed and they are now available in your
+              Your NFT have been claimed and they are now available in your
               wallet!
             </p>
             <p className="text-center text-14 text-ffffff xs:text-18">
@@ -209,7 +210,7 @@ export const App = React.memo(function App() {
               <a
                 href={`https://mumbai.polygonscan.com/tx/${txHash}`}
                 target="_blank"
-                style={{ color: "#df57bc" }}
+                style={{ color: "#7ed957" }}
                 rel="noreferrer"
               >
                 Polygonscan
@@ -224,17 +225,18 @@ export const App = React.memo(function App() {
         <div
           className={cn(
             "relative -mx-6 max-w-[1088px] justify-self-center px-6 xs:w-full",
-            "border-t border-df57bc bg-0f0b16 py-3 text-df57bc xs:rounded-10 xs:border xs:text-center",
+            "border-t border-7ed957 bg-0f0b16 py-3 text-7ed957 xs:rounded-10 xs:border xs:text-center",
           )}
         >
           <span>
-            Mesha is a mock client app to showcase how World ID works.{" "}
+            Once is demo app to show how World ID can solve KYC process for our
+            project.{" "}
           </span>
           <a
             href="/"
             className="underline decoration-1 transition-opacity hover:opacity-80"
           >
-            Learn more
+            More info on Once Dapp and Hackmoney
           </a>
         </div>
       )}

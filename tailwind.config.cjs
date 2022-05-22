@@ -62,6 +62,8 @@ module.exports = {
         "#000000",
         "#0f0b16",
         "#18161b",
+        "#26095e", 
+        "#7ed957",        
         "#d4bfff",
         "#df57bc",
         "#ffffff",

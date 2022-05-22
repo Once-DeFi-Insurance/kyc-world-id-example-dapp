@@ -42,7 +42,7 @@ export const Modal = React.memo(function Modal(props: {
         {props.buttonText && (
           <Button
             onClick={props.onClick}
-            className="mt-5 w-full bg-df57bc"
+            className="mt-5 w-full bg-7ed957"
           >
             {props.buttonText}
           </Button>
